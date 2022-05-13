@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-html{
-    text-transform: none;
-}
-
 h1{
     color: black;
     size: 10px;
     font-family: 'Roboto', sans-serif;
-    text-align: justify;
+    text-align: center;
     text-transform: uppercase;
     line-height: 20px;
     font-weight: bold;
@@ -17,13 +13,16 @@ h1{
 #testheader{
     color: green;
     font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    size: 8px;
 }
 
 #test2header{
     color: blue;
     font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    size: 20px;
 }
-
 
 p{
    color: rgb(192, 25, 25);
@@ -31,6 +30,26 @@ p{
 }
 
 img{
-    width: 100px;
+    width: 150px;
     margin: 0px;
+    text-align: center;
 }
+
+#one{
+    width:20%;
+    height: 280px;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 260px;
+  }
