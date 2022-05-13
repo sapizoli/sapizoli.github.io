@@ -10,19 +10,11 @@ h1{
     font-weight: bold;
 }
 
-h3{
+.content{
     color: green;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
-    size: 80px;
-}
-
-
-#test2header{
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
-    size: 20px;
+    size: 30%;
 }
 
 p{
