@@ -1,14 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+html{
+    text-transform: none;
+}
+
 h1{
     color: black;
     size: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: bold;
 }
+
+#testheader{
+    color: green;
+    font-family: 'Roboto', sans-serif;
+}
+
+#test2header{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 p{
    color: rgb(192, 25, 25);
-   font-size: 50px;
+   font-size: 20px;
 }
 
 img{
-    width: 50px;
-    margin: 20px;
+    width: 100px;
+    margin: 0px;
 }
