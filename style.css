@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 html {
-    background-color: aqua;
+    background-color: white);
 }
 
 h1 {
@@ -13,12 +13,13 @@ h1 {
     line-height: 20px;
     font-weight: bold;
 }
-.content{
-    color: yellow;
+
+.content {
+    color: black;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     size: 30%;
-    border-style: dashed;
+    border-style:solid;
     text-shadow: 5px 5px 10px;
 }
 
@@ -50,21 +51,34 @@ img {
     height: 260px;
 }
 
-  body{
-      background-color: aqua;
-  }
+body {
+    background-color: rgb(231, 235, 235);
+}
 
-  .bold{
-      font-weight: bold;
-      color: blue;
-      text-align: justify;
-      size: 40%;
-    }
+.bold {
+    font-weight: bold;
+    color: blue;
+    text-align: justify;
+    size: 40%;
+}
 
-    .img-div{
-        background-color: blueviolet;
-    }
-    .light{
-        background-color: brown;
-    }
+.img-div {
+    background-color: blueviolet;
+}
 
+table, th, td{
+    border: 1px solid;
+    width: 10%;
+    table-layout: inherit;
+}
+
+th{
+    height: 40px;
+}
+
+tr:hover {background-color: coral;}
+
+tr{
+    border: 1px solid;
+    text-align: center;
+}
