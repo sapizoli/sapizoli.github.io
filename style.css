@@ -14,8 +14,13 @@ h1 {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 .content {
     color: green;
+=======
+.content{
+    color: yellow;
+>>>>>>> 9bec1cdd2d0911cdb8f4f17e336713279d63c631
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     size: 30%;
@@ -49,6 +54,28 @@ img {
     margin-right: auto;
     width: 20%;
     height: 260px;
+<<<<<<< HEAD
 }
 
 body {}
+=======
+  }
+
+  body{
+      background-color: aqua;
+  }
+
+  .bold{
+      font-weight: bold;
+      color: blue;
+      text-align: justify;
+      size: 40%;
+    }
+
+    .img-div{
+        background-color: blueviolet;
+    }
+    .light{
+        background-color: brown;
+    }
+>>>>>>> 9bec1cdd2d0911cdb8f4f17e336713279d63c631
