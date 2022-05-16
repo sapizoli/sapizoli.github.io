@@ -13,21 +13,60 @@
     <h1>Login</h1>
     <div class="login-div">
         <form>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" class="blue form-control" type="email" name="email">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input id="password"class="form-control red" type="password" name="password">
-        </div>
-        <div class="form-group">
-            <button class="submit-btn">Login</button>
-        </div>
-        <div class="form-group">
-            <label for="comment">Megjegyzés</label>
-            <textarea id="comment" name="comment" rows="5"></textarea>
-        </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" class="blue form-control" type="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" class="form-control red" type="password" name="password">
+            </div>
+            <div class="form-group">
+                <button class="submit-btn">Login</button>
+            </div>
+            <div class="form-group">
+                <label for="comment">Megjegyzés</label>
+                <textarea id="comment" name="comment" rows="3"></textarea>
+            </div>
+            <br>
+            </form>
+            <span>Extra feltét:</span>
+            <div>
+                <input checked id="nothing" name="extra" type="radio" value="0">
+                <label for="nothing">Nem kérek</label>
+            </div>
+            <div>
+                <input id="cheese" name="extra" type="radio" value="300">
+                <label for="cheese">feltét 1</label>
+            </div>
+            <div>
+                <input id="double-cheese" name="extra" type="radio" value="600">
+                <label for="double-cheese">feltét 2</label>
+            </div>
+            <div>
+                <input id="double-meat" name="extra" type="radio" value="1000">
+                <label for="double-meat">feltét 3</label>
+            </div>
+            <div>
+                <input id="double-double" name="extra" type="radio" value="1600">
+                <label for="double-double">feltét 4</label>
+            </div>
+            <div>
+                <input id="valami más" name="extra" type="radio" value="1800">
+                <label for="valami más">feltét 5</label>
+            </div>
+            <br>
+            <div>
+                <label for="sauce">Szósz:</label>
+                <select name="sauce" id="sauce">
+                    <option value="0" selected>szósz1</option>
+                    <option value="100">szósz2</option>
+                </select>
+            </div>
+            <div>
+                <label for="quantity">Mennyiség:</label>
+                <input id="quantity" name="quantity" type="number" min="1" max="10">
+            </div>
         </form>
     </div>
     <ul>
