@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-h1{
+html {
+    background-color: aqua;
+}
+
+h1 {
     color: black;
     size: 10px;
     font-family: 'Roboto', sans-serif;
@@ -10,34 +14,34 @@ h1{
     font-weight: bold;
 }
 
-.content{
+.content {
     color: green;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     size: 30%;
+    border-style: dashed;
+    text-shadow: 5px 5px 10px;
 }
 
-p{
-   color: rgb(192, 25, 25);
-   font-size: 20px;
-}
-
-img{
+img {
     width: 150px;
     margin: 0px;
     text-align: center;
 }
 
-#one{
-    width:20%;
+#one {
+    width: 20%;
     height: 280px;
     margin: 0px;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-style: solid;
+    /*border-width: 5px;*/
+    /*border-color: blue;*/
+    box-shadow: 5px 5px 5px 5px;
 }
-
 
 .center {
     display: block;
@@ -45,4 +49,6 @@ img{
     margin-right: auto;
     width: 20%;
     height: 260px;
-  }
+}
+
+body {}
