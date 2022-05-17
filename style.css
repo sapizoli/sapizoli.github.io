@@ -66,7 +66,7 @@ body {
     background-color: blueviolet;
 }
 
-table, th, td{
+/*table, th, td{
     border: 1px solid;
     width: 10%;
     table-layout: inherit;
@@ -82,3 +82,4 @@ tr{
     border: 1px solid;
     text-align: center;
 }
+*/
