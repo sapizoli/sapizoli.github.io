@@ -1,33 +1,41 @@
 console.log("Helo");
-/*meg lehet változtatni*/
+/*meg lehet változtatni
 let price = 5;
 let price2 = 6;
 let total = price1+price2;
 let name;
 let userAge = 33;
-/*Nem lehet megváltoztatni*/
+/*Nem lehet megváltoztatni
 const age = 44;
 const valami = "Más valami";
-/*típusok*/
+/*típusok
 let num = 4;
 boolean, number, string, null, undefined
 typeof num
 let active = true;
 typeof active
+const valami = "Más valami"
+/*változók típusai
+let num = 4;
+num.toString()
+"4"
 name = "almafa";
 "almafa"
 name.replace("a", "b")
 "blamafa"
+<<<<<<< HEAD
 num.toString /*dotoperátor*/
 "4"
-/*számok*/
+/*számok
 let userAge = 33;
 userAge +5
 38
 6 % 3 
-0 /*maradékot írja ki*/
-/*hatványozás*/ 3**2
+0 /*maradékot írja ki
+/*hatványozás 3**2
+9
 let num =1;
+var num =1;
 num + 1
 2
 num - 1
@@ -37,5 +45,4 @@ num = num + 5;
 num / 2
 3
 num * 2
-12
-
+12*/
