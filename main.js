@@ -143,9 +143,16 @@ undefined
 amount = parseInt(quantity.value) * price;
 2400
 */
-function calcAmount(){
+
+/*esemény*/
+function calcAmount() {
     let price = 1000;
     let quantity = document.querySelector("input[name='quantity']");
     let amount = parseInt(quantity.value) * price;
-    alert("Fizetendő:" + amount + "Ft");
+    /*alert("Fizetendő:" + amount + "Ft"); --> felugró ablakban írja ki az összeget*/
+    /*HTML elemek módosítása*/
+    let showAmount = document.querySelector("span.show-amount");
+    showAmount.innerHTML = amount;
 }
+
+
