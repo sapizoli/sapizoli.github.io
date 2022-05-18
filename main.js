@@ -153,6 +153,30 @@ function calcAmount() {
     /*HTML elemek módosítása*/
     let showAmount = document.querySelector("span.show-amount");
     showAmount.innerHTML = amount;
+
+    /*stringek metódusaii:
+    let name = "Péter";
+    name.length
+    5
+    name = "  péter   ";
+    name.trim()
+    "Péter"
+    "Dr." + name
+    "Dr.   Péter"
+    let title = "Dr. ";
+    title.concat(name)
+    "Dr.   Péter"
+    title.concat(name.trim());
+    "Dr.Péter"
+    title.concat(name.trim()).toLowerCase()
+    "dr.péter"
+    title.concat(name.trim()).toupperCase()
+    "DR. PÉTER" */
+
+/* Keresés és módosítás a stringen belül
+
+*/
+
 }
 
 
