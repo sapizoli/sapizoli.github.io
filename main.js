@@ -126,4 +126,26 @@ parseInt("hal22"); -->betűvel nem kezdődhet
 NaN
 parseFloat("22.33") -->tizedestörtet csinál
 22.33
+
+Formok kezelése Javascript-el
+document.querySelector("input[name='quantity']");
+<input id=​"quantity" name=​"quantity" type=​"number" min=​"1" max=​"10">​
+let quantity = document.querySelector("input[name='quantity']");
+undefined
+quantity
+<input id=​"quantity" name=​"quantity" type=​"number" min=​"1" max=​"10">​
+quantity.value
+'2'
+let price =1200;
+undefined
+let amount = 0;
+undefined
+amount = parseInt(quantity.value) * price;
+2400
 */
+function calcAmount(){
+    let price = 1000;
+    let quantity = document.querySelector("input[name='quantity']");
+    let amount = parseInt(quantity.value) * price;
+    alert("Fizetendő:" + amount + "Ft");
+}
