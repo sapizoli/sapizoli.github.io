@@ -148,31 +148,30 @@ amount = parseInt(quantity.value) * price;
 function calcAmount() {
     let price = 1000;
     let quantity = document.querySelector("input[name='quantity']");
-    let amount = parseInt(quantity.value) * price;
-    /*alert("Fizetendő:" + amount + "Ft"); --> felugró ablakban írja ki az összeget*/
-    /*HTML elemek módosítása*/
-    let showAmount = document.querySelector("span.show-amount");
-    showAmount.innerHTML = amount;
-
-    /*if használata*/
     let amountNumber = parseInt(quantity.value);
+    /*alert("Fizetendő:" + amount + "Ft"); --> felugró ablakban írja ki az összeget*/
 
     if (isNaN(amountNumber)) {
-        amountNumber = 0;
-        /*
-        3 operandusos kifejezés
-         amountNumber = isNan(amountNumber) ? 0 : amountNumber;
-         */
+        amountNumber = 0;  
+        //3 operandusos kifejezés
+        //amountNumber = isNan(amountNumber) ? 0 : amountNumber; 
+        showSumPrice(price, amountNumber);
     }
-    if (amountNumber > 10) {
-        alert("maximum 10 terméket vásárolhat");
-    } else if (amountNumber < 1) {
-        alert("Minimum egy terméket kell vásárolnia");
-    } else {
-        let amount = amountNumber * price;
-        showAmount.innerHTML = amount;
+    showSumPrice(price, amountNumber);
+    
+    // Függvények paraméterezése
+    function showSumPrice(price, amountNumber ){
+        let showAmount = document.querySelector("span.show-amount");
+        if (amountNumber > 10) {
+            alert("maximum 10 terméket vásárolhat");
+        } else if (amountNumber < 1) {
+            alert("Minimum egy terméket kell vásárolnia");
+        } else {
+            let amount = amountNumber * price;
+            showAmount.innerHTML = amount; /*-->HTML elemek módosítása*/
+        }
     }
-
+    
     /*stringek metódusaii:
     let name = "Péter";
     name.length
@@ -245,11 +244,20 @@ function calcAmount() {
     false
     4>2 || 3<1
     true
+
+    Függvények (eljárás--> nem ad vissza értéket)
+    function hider(){
+        document.body.innerHTML = ""; 
+    }
+    undefined
+    hider();
+    function adder(x, y){
+    return x +y;
+    }
+    undefined
+    adder(2, 7);
+    9
     */
-
-
-
-
 
 }
 
