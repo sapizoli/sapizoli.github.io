@@ -259,6 +259,15 @@ function calcAmount() {
     9
     */
 
+    //Scope
+    //Global scope
+   /* function someFunction(){
+    //Local Scope #1
+    }
+    function someOtherFunction(){
+    //Local Scope #2    
+    }*/
+    
 }
 
 
