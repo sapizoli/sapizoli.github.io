@@ -76,7 +76,11 @@ From function: 100 200
 
 
 Objektumok átadása referencia szerint
+<<<<<<< HEAD
 function callByRef(arr) {
+=======
+function cannByRef(arr) {
+>>>>>>> b2231ffb164ec24b298e2c388e1f9f8bc423fe04
     arr[1] = 200;
     console.log("From function: ", arr);
 }
@@ -85,6 +89,7 @@ callByRef(fruits);
 console.log(fruits)
 From function: (3) ["Pear", 200, "Apple"]
 (3) ["Pear", 200, "Apple"]
+<<<<<<< HEAD
  
 
 for ciklus
@@ -141,3 +146,6 @@ for (let i = 0; i < fruit.lenght i++){
 Pear
 Avocado
 undefined
+=======
+ 
+>>>>>>> b2231ffb164ec24b298e2c388e1f9f8bc423fe04
