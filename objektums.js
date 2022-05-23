@@ -35,8 +35,8 @@ user
 {name: "Sanyi", age: 33}
 user = {
     {name: "Sanyi", age: 33}
-
 }
+
 
 for in ciklus 
 for (let i = 0; i < numericArray.length; i++){
@@ -62,4 +62,19 @@ user.k
 for (let k in user) {
     console.log("key: ", k, 'value: ', user.k);
 
+
+for of ciklus
+let user = {name: "Pisti", age: 33, email: "pisti@gmail.com"};
+for (let car of cars) {
+    console.log(car);
+}
+Volvo
+BMW
+Opel
+
+for (let prop of user) {
+    console.log(propertyIsEnumerable);
+for (let prop of user) {
+    console.log(prop);
+}
 */
