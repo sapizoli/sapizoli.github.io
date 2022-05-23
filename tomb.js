@@ -1,4 +1,4 @@
-./*let cars = ["Ford", "Audi", "Volvo"];
+/*let cars = ["Ford", "Audi", "Volvo"];
 cars
 (3) ["Ford", "Audi", "Volvo"]
 let user = [1, "Joe", true, null];
