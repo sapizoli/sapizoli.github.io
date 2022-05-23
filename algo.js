@@ -57,7 +57,21 @@ CIKLUS AMÍG van még szám, ADDIG
     FELTÉTEL VÉGE
 CIKLUS VÉGE
 */
+let biggest = numericArray[0];
+for (let i= 0; i < numericArray.length; i++){
+    if (numericArray[i] > biggest) {
+        biggest = numericArray[i];
+    }
+}
+console.log("The biggest element: ", biggest);
 
+let smallest = numericArray[0];
+for (let i= 0; i < numericArray.length; i++){
+    if (numericArray[i] < smallest) {
+        smallest = numericArray[i];
+    }
+}
+console.log("The smallest element: ", smallest);
 
 /*
 Eldöntés
@@ -69,3 +83,11 @@ CIKLUS AMÍG van elem ÉS NEM találat
     FELTÉTEL VÉGE 
 CIKLUS VÉGE
 */
+let contains = false;
+for (let i= 0; i < numericArray.length && contains == false /*!contains*/; i++){
+    if (numericArray[i] == 5){
+        contains = true;
+    }
+}
+console.log("This array contains 5: ", contains);
+    
