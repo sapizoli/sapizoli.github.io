@@ -38,15 +38,11 @@ user = {
 }
 
 
-for in ciklus 
+for in ciklus --> az indexeken megy végig
 for (let i = 0; i < numericArray.length; i++){
     console.log(user[i]);
 }
-let i = 0;
-i < user.length
-false 
-i == user.length
-false
+
 for (let k in user) {
     console.log("key: ", k, 'value: ', user[k]);
 }
@@ -59,11 +55,9 @@ user["name"]
 "Kiss Ramóna"
 user.k
 
-for (let k in user) {
-    console.log("key: ", k, 'value: ', user.k);
 
 
-for of ciklus
+for of ciklus--> értékeken megy végig 
 let user = {name: "Pisti", age: 33, email: "pisti@gmail.com"};
 for (let car of cars) {
     console.log(car);
@@ -72,9 +66,20 @@ Volvo
 BMW
 Opel
 
-for (let prop of user) {
-    console.log(propertyIsEnumerable);
-for (let prop of user) {
-    console.log(prop);
+for (let car of cars) {
+    console.log(car);
+    Volvo
+    BMW
+    Opel
+    
+let str = "Helo";
+for(let char of str){
+    console.log(char);
+    H
+    e
+    2 l
+    o
 }
+for(let k  of Object.keys)(user(({
+
 */
