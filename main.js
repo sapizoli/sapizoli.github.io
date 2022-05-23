@@ -148,12 +148,30 @@ amount = parseInt(quantity.value) * price;
 function calcAmount() {
     let price = 1000;
     let quantity = document.querySelector("input[name='quantity']");
-    let amount = parseInt(quantity.value) * price;
+    let amountNumber = parseInt(quantity.value);
     /*alert("Fizetendő:" + amount + "Ft"); --> felugró ablakban írja ki az összeget*/
-    /*HTML elemek módosítása*/
-    let showAmount = document.querySelector("span.show-amount");
-    showAmount.innerHTML = amount;
 
+    if (isNaN(amountNumber)) {
+        amountNumber = 0;  
+        //3 operandusos kifejezés
+        //amountNumber = isNan(amountNumber) ? 0 : amountNumber; 
+        showSumPrice(price, amountNumber);
+    }
+    showSumPrice(price, amountNumber);
+    
+    // Függvények paraméterezése
+    function showSumPrice(price, amountNumber ){
+        let showAmount = document.querySelector("span.show-amount");
+        if (amountNumber > 10) {
+            alert("maximum 10 terméket vásárolhat");
+        } else if (amountNumber < 1) {
+            alert("Minimum egy terméket kell vásárolnia");
+        } else {
+            let amount = amountNumber * price;
+            showAmount.innerHTML = amount; /*-->HTML elemek módosítása*/
+        }
+    }
+    
     /*stringek metódusaii:
     let name = "Péter";
     name.length
@@ -173,21 +191,83 @@ function calcAmount() {
     title.concat(name.trim()).toupperCase()
     "DR. PÉTER" */
 
-/* Keresés és módosítás a stringen belül
- let testStr = Hol lehet a baba?";
- testStr.indexOf("baba");
- 12
- testStr.replace("baba" , "pénz")
- "Hol lehet a pénz?"
- let test2 = testStr.replace("baba","mama");
- test2
- "Hol lehet a mama?"
- testStr = testStr.replace("baba","mama");
- "Hol lehet a mama?"
- testStr
- "Hol lehet a mama"
-*/
+    /* Keresés és módosítás a stringen belül
+     let testStr = Hol lehet a baba?";
+     testStr.indexOf("baba");
+     12
+     testStr.replace("baba" , "pénz")
+     "Hol lehet a pénz?"
+     let test2 = testStr.replace("baba","mama");
+     test2
+     "Hol lehet a mama?"
+     testStr = testStr.replace("baba","mama");
+     "Hol lehet a mama?"
+     testStr
+     "Hol lehet a mama"
+    */
 
+    /* Igaz vagy hamis
+     let active = true;
+     active
+     true
+     typeof active
+     "boolean"
+     boolean(0)
+     false
+     boolean(3)
+     true
+     boolean("hello")
+     true
+     boolean("")
+     false
+     1>2
+     false
+     2>1
+     true
+     2>=1
+     true
+     "hello" == "helloka"
+     false
+     "hello" <= "helloka"
+     true
+    0 == false
+    true
+    0===false
+    0!==false
+    true
+    false
+    3 != 3
+    false
+    4>2 && 3>1
+    true
+    4>2 && 3<1
+    false
+    4>2 || 3<1
+    true
+
+    Függvények (eljárás--> nem ad vissza értéket)
+    function hider(){
+        document.body.innerHTML = ""; 
+    }
+    undefined
+    hider();
+    function adder(x, y){
+    return x +y;
+    }
+    undefined
+    adder(2, 7);
+    9
+    */
+
+    //Scope
+    //Global scope
+   /* function someFunction(){
+    //Local Scope #1
+    }
+    function someOtherFunction(){
+    //Local Scope #2    
+    }*/
+    
 }
 
 
