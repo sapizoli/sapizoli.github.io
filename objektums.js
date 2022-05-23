@@ -72,7 +72,7 @@ for (let car of cars) {
     BMW
     Opel
     
-let str = "Helo";
+let str = "Hello";
 for(let char of str){
     console.log(char);
     H
@@ -80,6 +80,36 @@ for(let char of str){
     2 l
     o
 }
-for(let k  of Object.keys)(user(({
+for(let k  of Object.keys(user)){
+    console.log(k);
+}
+name
+age
+email
+
+for(let k  of Object.keys(user)){
+    console.log(user[k]);
+}
+Pisti
+33
+stb.
+
+for(let k  of Object.keys(user)){
+    console.log(k, user[k]);
+}
+
+for(let val  of Object.values(user)){
+    console.log(val);
+}
+Pisti
+33
+stb.
+
+for(let entry of Object.entries(user)){
+    console.log(entry[0]. entry[1]);
+}
+name Pisti
+age 33
+email pisti@gmail.com
 
 */
