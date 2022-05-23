@@ -1,4 +1,4 @@
-/*let cars = ["Ford", "Audi", "Volvo"];
+./*let cars = ["Ford", "Audi", "Volvo"];
 cars
 (3) ["Ford", "Audi", "Volvo"]
 let user = [1, "Joe", true, null];
@@ -76,11 +76,7 @@ From function: 100 200
 
 
 Objektumok átadása referencia szerint
-<<<<<<< HEAD
 function callByRef(arr) {
-=======
-function cannByRef(arr) {
->>>>>>> b2231ffb164ec24b298e2c388e1f9f8bc423fe04
     arr[1] = 200;
     console.log("From function: ", arr);
 }
@@ -89,7 +85,6 @@ callByRef(fruits);
 console.log(fruits)
 From function: (3) ["Pear", 200, "Apple"]
 (3) ["Pear", 200, "Apple"]
-<<<<<<< HEAD
  
 
 for ciklus
@@ -145,7 +140,57 @@ for (let i = 0; i < fruit.lenght i++){
 }
 Pear
 Avocado
-undefined
-=======
- 
->>>>>>> b2231ffb164ec24b298e2c388e1f9f8bc423fe04
+undefined 
+
+
+Operátorok
+let age = 33;
+age = age + 4;
+37
+age
+37
+age += 10;
+age
+47
+age /= 3
+15.666666
+age *= 3
+age 47
+age % 2
+1
+
+
+a ternary operátor
+let age = 33;
+let canVote;
+
+if (age <18) {
+    canVote = false;
+} else {
+    canVote = true;
+}
+true
+canVote
+true
+
+canVote = age <18 ? false : true;
+canVote = age >=18;
+true
+canVote
+true
+
+let city = "NY";
+canVote = (age >= 18 && city == "NY") ? true : false;
+true
+
+let level = 1;
+let salary = level > 2 ? "1.2M" : "0.8M";
+salary
+"0.8M"
+level += 2
+3
+salary = level > 2 ? "1.2M" : "0.8M";
+salary
+"1.2M"
+
+*/
