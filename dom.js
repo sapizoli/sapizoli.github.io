@@ -36,4 +36,41 @@ Element.prototype.setUrgent = function() {
 }
 document.querySelector("input#email").setUrgent() -->piros lesz a keret
 undefined
+
+
+Attribútumok
+let email= document.querySelector("input#email");
+undefined
+
+email.getAttribute("class")
+'blue form-control'
+
+email.getAttribute("id")
+'email'
+
+email.getAttribute("name")
+'email'
+
+email.getAttribute("type")
+'email'
+
+email.attributes--> összes felsorolása
+
+email.setAttribute("type", "top-input"); --> set átálítja a kívánt értékre
+undefined
+
+
+Több elem módosítása
+let myNodeList = document.querySelectorAll("input");
+undefined
+
+for (let i = 0; i < myNodeList.length; i++) {
+    myNodeList[i].style.backgroundcolor = "red";
+}
+
+for (let element in myNodeList) {
+    if(Element.style) {
+    element.style.color = "grey";
+    }
+}
 */
