@@ -118,6 +118,4 @@ document.querySelector("div.form-group:nth-child(3)").lastChild
 #text
 
 
-új elemek hozzáadása
-
 */

@@ -14,7 +14,7 @@ Object.values(user);
 Object.entries(user);
 (3)[Array(2), Array(2), Array(2)]
 Object.entries(user)[1]
-    (2)["age", 20]
+    (2)["age"]('20')
 Object.entries(user)[1][0]
 "age"
 Object.keys(user).length
