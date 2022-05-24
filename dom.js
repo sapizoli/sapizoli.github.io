@@ -60,7 +60,7 @@ email.setAttribute("type", "top-input"); --> set átálítja a kívánt értékr
 undefined
 
 
-Több elem módosítása
+Több elem módosítása ciklussal
 let myNodeList = document.querySelectorAll("input");
 undefined
 
@@ -73,4 +73,51 @@ for (let element in myNodeList) {
     element.style.color = "grey";
     }
 }
+
+
+Több elem módosítása függvénnyel
+function massModify(selector, attribute, value) {
+    let nodeList = document.querySelectorAll(selector);
+    for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i][attribute] = value;
+    }
+}
+undefined
+
+massModify("input", "placeholder", "érték")
+undefined
+
+massModify("input", "title", "érték")
+undefined
+
+
+Egy elem gyerekei
+document.querySelector("input#email").childElementCount
+0
+document.querySelector("div").childElementCount
+3
+document.querySelector("div.form-group:nth-child(2)").children
+HTMLCollection(2) [label, input#email.blue.form-control, email: input#email.blue.form-control]
+
+document.querySelector("div.form-group:nth-child(3)").children
+HTMLCollection(2) [label, input#password.form-control.red, password: input#password.form-control.red]
+
+document.querySelector("div.form-group:nth-child(3)").childNodes -->szöveges tartalmak megjelenítése is
+NodeList(5) [text, label, text, input#password.form-control.red, text]0: text1: label2: text3: input#password.form-control.red4: textlength: 5[[Prototype]]: NodeList
+
+document.querySelector("div.form-group:nth-child(3)").firstChild
+#text
+
+document.querySelector("div.form-group:nth-child(3)").firstElementChild
+<label for=​"password">​Password​</label>​
+
+document.querySelector("div.form-group:nth-child(3)").lastElementChild
+<input id=​"password" class=​"form-control red" type=​"password" name=​"password">​
+
+document.querySelector("div.form-group:nth-child(3)").lastChild
+#text
+
+
+új elemek hozzáadása
+
 */
