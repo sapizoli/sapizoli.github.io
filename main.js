@@ -144,6 +144,7 @@ amount = parseInt(quantity.value) * price;
 2400
 */
 
+
 /*esemény*/
 function calcAmount() {
     let price = 1000;
@@ -152,15 +153,16 @@ function calcAmount() {
     /*alert("Fizetendő:" + amount + "Ft"); --> felugró ablakban írja ki az összeget*/
 
     if (isNaN(amountNumber)) {
-        amountNumber = 0;  
+        amountNumber = 0;
         //3 operandusos kifejezés
         //amountNumber = isNan(amountNumber) ? 0 : amountNumber; 
         showSumPrice(price, amountNumber);
     }
     showSumPrice(price, amountNumber);
-    
+
+
     // Függvények paraméterezése
-    function showSumPrice(price, amountNumber ){
+    function showSumPrice(price, amountNumber) {
         let showAmount = document.querySelector("span.show-amount");
         if (amountNumber > 10) {
             alert("maximum 10 terméket vásárolhat");
@@ -172,14 +174,30 @@ function calcAmount() {
         }
     }
 
-    //Új elemek hozzáadása gyerekként
+
+    //Új elemek hozzáadása gyerekként a HTML-hez
     let helpText = document.createElement("small");
     helpText.className = "login-div";
     helpText.innerHTML = "Adja meg a feltéteket!";
-    
+
     let parent = document.querySelector("div.login-div:nth-child(1)");
     parent.appendChild(helpText);
     //parent.removeChild(helpText);
+
+    //Eseménykezelők hozzáadása a HTML-hez
+    let sendButton =  document.querySelector("form .btn.btn-primary");
+   /* sendButton.onclick = function() {
+        alert("Hello JS!");
+    }
+    */
+   sendButton.addEventListener("Click", function() {
+       alert ("Hello JS!");
+   });
+
+   window.addEventListener("resize", function() {
+    console.log(this.innerHeight, this.innerWidth);
+   });
+
 
     /*stringek metódusaii:
     let name = "Péter";
@@ -270,13 +288,13 @@ function calcAmount() {
 
     //Scope
     //Global scope
-   /* function someFunction(){
-    //Local Scope #1
-    }
-    function someOtherFunction(){
-    //Local Scope #2    
-    }*/
-    
+    /* function someFunction(){
+     //Local Scope #1
+     }
+     function someOtherFunction(){
+     //Local Scope #2    
+     }*/
+
 }
 
 
