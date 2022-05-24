@@ -38,7 +38,7 @@ user = {
 }
 
 
-for in ciklus --> az indexeken megy végig
+for in ciklus --> a kulcsokon megy végig
 for (let i = 0; i < numericArray.length; i++){
     console.log(user[i]);
 }
