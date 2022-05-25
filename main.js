@@ -184,19 +184,44 @@ function calcAmount() {
     parent.appendChild(helpText);
     //parent.removeChild(helpText);
 
-    //Eseménykezelők hozzáadása a HTML-hez
-    let sendButton =  document.querySelector("form .btn.btn-primary");
-   /* sendButton.onclick = function() {
-        alert("Hello JS!");
-    }
-    */
-   sendButton.addEventListener("Click", function() {
-       alert ("Hello JS!");
-   });
 
-   window.addEventListener("resize", function() {
-    console.log(this.innerHeight, this.innerWidth);
-   });
+    //Egy elem szülője
+    let alertCloseButtons = document.querySelectorAll(".close[data-dismiss='alert']");
+    let alertCloseEventHandlerFunction = function(ev){
+        this.parentElement.style.display = "none";
+    };
+    for (let i = 0;i < alertCloseButtons.length; i++){
+        alertCloseButtons[i].addEventListener("click", function(ev){
+        }  
+
+
+    //Eseménykezelők hozzáadása a HTML-hez (addEventListener)
+    let sendButton = document.querySelector("form .btn.btn-primary");
+    /* sendButton.onclick = function() {
+         alert("Hello JS!");
+     }
+     */
+    sendButton.addEventListener("Click", function () {
+        alert("Hello JS!");
+    });
+
+    window.addEventListener("resize", function () {
+        console.log(this.innerHeight, this.innerWidth);
+    });
+
+
+    //Űrlap események
+    let email = document.querySelector("email");
+    email.addEventListener("submit", function(ev){
+         ev.preventDefault();
+         //console.log(this);
+         let inputs = this.querySelectorAll("input");
+         let values = {};
+         for (let i = 0; i < inputs.lenght; i++){
+             values[inputs[i].name] = inputs[i].value;
+         }
+         console.log(values);
+    });
 
 
     /*stringek metódusaii:
