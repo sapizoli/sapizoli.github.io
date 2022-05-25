@@ -119,3 +119,14 @@ document.querySelector("div.form-group:nth-child(3)").lastChild
 
 
 */
+//Dom manipuláció while ciklussal (select elem kitöltése)
+let toppings =["szaloona", "tojás"];
+let toppingsSelect = document.querySelector("#topinput");
+let index = 0;
+while(index < toppings.length) {
+  let option = document.createElement("option");
+  option.value = index;
+  option.innerHTML = toppings[index];
+  toppingsSelect.appendChild(option);
+  index++; 
+}
