@@ -1,0 +1,2 @@
+JSON.parse(json); --> Stringet objektummá alakaítja
+JSON.stringify(json); -->Stringé alakítja vissza

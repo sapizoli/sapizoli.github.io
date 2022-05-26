@@ -12,7 +12,10 @@
         }
     ],
     "comments": [
-        {"id": 1, "body": "some comment", "userId": 1}
+        {
+            "id": 1,
+            "body": "some comment",
+            "userId": 1
+        }
     ]
 }
-//JSON.parse(json); --> Stringet objektummá alakaítja
