@@ -1,0 +1,6 @@
+{
+    "LiverServer.settings.ignoreFiles": [
+        "node_modules/**",
+        "dc/**"
+    ]
+}
